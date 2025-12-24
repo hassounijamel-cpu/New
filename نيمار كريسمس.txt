@@ -30,7 +30,7 @@ local player = game.Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
 local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "Neymar Hub"
+screenGui.Name = "Merry Christmas"
 screenGui.IgnoreGuiInset = true
 screenGui.ResetOnSpawn = false
 screenGui.Parent = playerGui
@@ -48,7 +48,7 @@ local textLabel = Instance.new("TextLabel")
 textLabel.Size = UDim2.new(1, 0, 0.2, 0)
 textLabel.Position = UDim2.new(0, 0, 0.4, 0)
 textLabel.BackgroundTransparency = 1
-textLabel.Text = "Neymar Hub"
+textLabel.Text = "Merry Christmas"
 textLabel.Font = Enum.Font.BuilderSansBold
 textLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 textLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -152,6 +152,14 @@ MakeWindow({
     }
 })
 
+MinimizeButton({
+  Image = "rbxassetid://137269098604758", -- ← هنا الصورة
+  Size = {40, 40},
+  Color = Color3.fromRGB(10, 10, 10),
+  Corner = true,
+  Stroke = false,
+  StrokeColor = Color3.fromRGB(255, 0, 0)
+})
 
 local Detect = MakeTab({Name = "حقوق و كشف"})
 
